@@ -34,40 +34,60 @@ const app = () => {
 app();
 
 
-// ScrollTrigger.matchMedia({
-//     "(min-width: 768px)": function () {
-//         let tl = gsap.timeline({
-//             scrollTrigger: {
-//                 trigger: ".second-page",
-//                 start: "top",
-//                 end: "100%",
-//                 scrub: true,
-//                 pin: true,
-//             },
-//         });
+ScrollTrigger.matchMedia({
+    "(max-width: 768px)": function () {
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".second-page",
+                start: "-100%",
+                end: "100%",
+                scrub: true,
+                pin: true,
+            },
+        });
 
-//         tl.fromTo('.second-page', { clipPath: 'circle(4%)' }, { clipPath: 'circle(75%)', duration: 3 });
-//         tl.fromTo('.code-note', { scale: 0.5 }, { scale: 0, opacity: 0, duration: 1 }, '-=3');
-//         tl.fromTo('.title', { opacity: 0 }, { opacity: 1, duration: 1 });
-//         tl.fromTo('.subtitle', { opacity: 0 }, { opacity: 1, duration: 1 });
-//         // tl.fromTo('.custom', { opacity: 0 }, { opacity: 1, duration: 1 });
-//     },
-//     "all": function () {}
-// });
-
-let tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".second-page",
-        start: "top",
-        end: "100%",
-        scrub: true,
-        pin: true,
+        tl.fromTo('.second-page', { clipPath: 'circle(4%)' }, { clipPath: 'circle(75%)', duration: 3 });
+        tl.fromTo('.code-note', { scale: 0.5 }, { scale: 0, opacity: 0, duration: 1 }, '-=3');
+        tl.fromTo('.title', { opacity: 0 }, { opacity: 1, duration: 1 });
+        tl.fromTo('.subtitle', { opacity: 0 }, { opacity: 1, duration: 1 });
+        // tl.fromTo('.custom', { opacity: 0 }, { opacity: 1, duration: 1 });
     },
+    "(min-width: 768px)": function () {
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".second-page",
+                start: "top",
+                end: "100%",
+                scrub: true,
+                pin: true,
+                markers: true
+            },
+        });
+
+        tl.fromTo('.second-page', { clipPath: 'circle(4%)' }, { clipPath: 'circle(75%)', duration: 3 });
+        tl.fromTo('.code-note', { scale: 0.5 }, { scale: 0, opacity: 0, duration: 1 }, '-=3');
+        tl.fromTo('.title', { opacity: 0 }, { opacity: 1, duration: 1 });
+        tl.fromTo('.subtitle', { opacity: 0 }, { opacity: 1, duration: 1 });
+        // tl.fromTo('.custom', { opacity: 0 }, { opacity: 1, duration: 1 });
+
+
+    }
 });
 
-tl.fromTo('.second-page', { clipPath: 'circle(4%)' }, { clipPath: 'circle(75%)', duration: 3 });
-tl.fromTo('.code-note', { scale: 0.5 }, { scale: 0, opacity: 0, duration: 1 }, '-=3');
-tl.fromTo('.title', { opacity: 0 }, { opacity: 1, duration: 1 });
-tl.fromTo('.subtitle', { opacity: 0 }, { opacity: 1, duration: 1 });
-// tl.fromTo('.custom', { opacity: 0 }, { opacity: 1, duration: 1 });
+// let tl = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: ".second-page",
+//         start: "top",
+//         end: "100%",
+//         scrub: true,
+//         pin: true,
+//         markers: true
+//     },
+// });
+
+// tl.fromTo('.second-page', { clipPath: 'circle(4%)' }, { clipPath: 'circle(75%)', duration: 3 });
+// tl.fromTo('.code-note', { scale: 0.5 }, { scale: 0, opacity: 0, duration: 1 }, '-=3');
+// tl.fromTo('.title', { opacity: 0 }, { opacity: 1, duration: 1 });
+// tl.fromTo('.subtitle', { opacity: 0 }, { opacity: 1, duration: 1 });
+// // tl.fromTo('.custom', { opacity: 0 }, { opacity: 1, duration: 1 });
 
