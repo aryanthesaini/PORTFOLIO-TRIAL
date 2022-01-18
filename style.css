@@ -50,7 +50,9 @@ body{
   /* z-index: -6; */
 
 }
-
+.navbar {
+    background:transparent;
+}
 .second-page video{
     width: 100%;
     height: 100%;
@@ -184,58 +186,24 @@ body{
     }
 
 }
+.topic{
+    color: red;
+    text-shadow: 4px;
+}
 
 
 /* NAVBAR DESIGNING STARTS */
-
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 9vh;
-    background-color:black;
+.navbar-nav {
+    margin-left: auto;
+    /* margin-right: auto; */
+}
+.nav-item{
+    margin-left: 3rem;
 }
 
-.logo{
-    color: rgb(169, 163, 163);
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 20px;
-}
 
-.nav-links{
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-
-}
-.nav-links li{
-    list-style: none;
-}
-
-.nav-links a{
-    color: white;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.blank{
-    display: none;
-}
-
-.blank div{
-    width: 25px;
-    height: 2px;
-    background-color: rgb(169, 163, 163) ;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
 @media screen and (max-width: 1024px){
-    .nav-links{
-        width: 40%;
-    }
+    
     .main{
         max-width: 80vh;   
         align-items: center;
@@ -244,9 +212,7 @@ nav{
 
 
 @media screen and (max-width: 768px){
-    body{
-        overflow-x:hidden;
-    }
+   
     .mainTitle{
         margin-bottom: 2px;
     }
@@ -266,59 +232,11 @@ nav{
         max-width: 40vh;   
         align-items: center;
     }
-    .nav-links{
-       position: absolute;
-       right: 0px;
-       height: 92vh;
-       top:9vh;
-       background-color: black;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       width: 100%;
-       transform: translate(100%);
-       transition: transform 0.5s ease-in;
-    
-    }
 
-
-    .nav-links li{
-        opacity: 0;
-    }
-
-    .blank{
-        display: block;
-        cursor: pointer;
-    }
 }
 
 
-.nav-active{
-    transform: translateX(0%)
-}
-
-@keyframes navLinkFade {
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
 
 
-.toggle .line2{
-    opacity: 0;
-}
 
-
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px, -6px);
-}
 
