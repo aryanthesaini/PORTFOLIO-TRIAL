@@ -251,18 +251,18 @@ nav{
         margin-bottom: 2px;
     }
     .title{
-        font-size: 40px;
+        font-size: 35px;
     }
     .subtitle{
         margin-bottom: 5%;
-        font-size: 20px;
+        font-size: 16px;
     }
     /* .second-page{    
         clip-path: circle(100%);
     } */
  
     .main{
-        max-width: 50vh;   
+        max-width: 40vh;   
         align-items: center;
     }
     .nav-links{
