@@ -6,7 +6,7 @@
 }
 body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    url("https://image.freepik.com/free-vector/digital-white-background-with-binary-code-numbers_1017-25335.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     cursor: none;
@@ -15,8 +15,8 @@ body{
 
 .cursor{
 
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     border: 2px solid white;
     border-radius: 50%;
     position: fixed;
@@ -82,7 +82,7 @@ body{
     width: 100%;
     height: 100vh;
     color: white;
-    clip-path: circle(5%);
+    /* clip-path: circle(5%); */
     overflow: hidden;
   display: flex;
   align-items: center;
@@ -90,6 +90,15 @@ body{
   flex-direction: column;
   /* z-index: -6; */
 
+}
+
+
+.project-heading{
+    font-size: 150px;
+    font-weight: 100;
+    /* margin-top: 5rem;
+    /* margin-left: auto; */
+    /* margin-right: auto; */ 
 }
 .navbar {
     background:transparent;
@@ -128,10 +137,12 @@ body{
 }
 
 .title{
+    display: flex;
     font-size: 4rem;
     font-weight: 100;
     padding-bottom: 10%;
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
+    margin-top: 10%;
 }
 
 .subtitle{
@@ -249,6 +260,13 @@ body{
         max-width: 80vh;   
         align-items: center;
     }
+    .project-heading{
+        font-size: 100px;
+    }
+    .title{
+        /* margin-top: 60%; */
+        font-size: 60px;
+    }
 }
 
 
@@ -258,8 +276,8 @@ body{
         margin-bottom: 2px;
     }
     .title{
-        margin-top: 60%;
-        font-size: 20px;
+        /* margin-top: 60%; */
+        font-size: 40px;
     }
     .subtitle{
         margin-bottom: 5%;
@@ -272,6 +290,9 @@ body{
     .main{
         max-width: 40vh;   
         align-items: center;
+    }
+    .project-heading{
+        font-size: 50px;
     }
 
 }
