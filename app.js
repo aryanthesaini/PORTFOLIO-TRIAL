@@ -114,3 +114,14 @@ tl.fromTo('.subtitle', { opacity: 0 }, { opacity: 1, duration: 1 });
 tl.fromTo('.third-page', { clipPath: 'circle(4%)' }, { clipPath: 'circle(75%)', duration: 1 });
 // tl.fromTo('.custom', { opacity: 0 }, { opacity: 1, duration: 1 });
 
+let tl2 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".third-page",
+        start: "top",
+        end: "20%",
+        scrub: true,
+        pin: true,
+    },
+});
+
+tl2.fromTo('.third-page', { scale: 0 }, { scale: 1, opacity: 1, duration: 0.2 });
