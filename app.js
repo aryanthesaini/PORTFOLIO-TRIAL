@@ -1,143 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
 
-// const navslide = () => {
-//     const blank = document.querySelector('.blank');
-//     const nav = document.querySelector('.nav-links');
-//     const navLinks = document.querySelectorAll('.nav-links li')
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Saini</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.css"
+        integrity="sha512-PYSQaQBKTu066xiq+XES4zNfKps3Za9xFsPH97MuEaP53a4kNFed/Q7lW539jALMETHApKj7/CZ1ac9d0NBzZA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-//     //toggle nav
-//     blank.addEventListener('click', () => {
-//         nav.classList.toggle('nav-active');
-//         //animate nav
-//         navLinks.forEach((link, index) => {
-//             if (link.style.animation) {
-//                 link.style.animation = ``;
-//             }
-//             else {
-//                 link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`
-//             }
+<body>
+    <div class="cursor"></div>
+    <header>
 
-//         })
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Aryan</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/aryanthesaini">GitHub</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact me</a>
+                        </li>
 
-//         //blank animation
-//         blank.classList.toggle('toggle');
-//     })
+                </div>
+            </div>
+        </nav>
+        <!-- <nav>
+            <div class="logo">
+                <h3>Aryan Saini</h3>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">About </a></li>
+                <li><a href="#"> GitHub</a></li>
+                <li><a href="#"> Contact me </a></li>
+            </ul>
+            <div class="blank">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav> -->
 
+    </header>
 
-// }
+    <div class="front-page">
+        <span class="mainTitle">
+            <h1>Hello, I am </h1>
+        </span>
 
-
-// const app = () => {
-//     navslide();
-// }
-
-
-// app();
-
-
-// ScrollTrigger.matchMedia({
-//     "(max-width: 768px)": function () {
-//         let tl = gsap.timeline({
-//             scrollTrigger: {
-//                 trigger: ".second-page",
-//                 start: "-100%",
-//                 end: "100%",
-//                 scrub: true,
-//                 pin: true,
-//             },
-//         });
-
-//         tl.fromTo('.second-page', { clipPath: 'circle(4%)' }, { clipPath: 'circle(75%)', duration: 3 });
-//         tl.fromTo('.code-note', { scale: 0.5 }, { scale: 0, opacity: 0, duration: 1 }, '-=3');
-//         tl.fromTo('.title', { opacity: 0 }, { opacity: 1, duration: 1 });
-//         tl.fromTo('.subtitle', { opacity: 0 }, { opacity: 1, duration: 1 });
-//         // tl.fromTo('.custom', { opacity: 0 }, { opacity: 1, duration: 1 });
-//     },
-//     "(min-width: 768px)": function () {
-//         let tl = gsap.timeline({
-//             scrollTrigger: {
-//                 trigger: ".second-page",
-//                 start: "top",
-//                 end: "100%",
-//                 scrub: true,
-//                 pin: true,
-//                 markers: true
-//             },
-//         });
-
-//         tl.fromTo('.second-page', { clipPath: 'circle(4%)' }, { clipPath: 'circle(75%)', duration: 3 });
-//         tl.fromTo('.code-note', { scale: 0.5 }, { scale: 0, opacity: 0, duration: 1 }, '-=3');
-//         tl.fromTo('.title', { opacity: 0 }, { opacity: 1, duration: 1 });
-//         tl.fromTo('.subtitle', { opacity: 0 }, { opacity: 1, duration: 1 });
-//         // tl.fromTo('.custom', { opacity: 0 }, { opacity: 1, duration: 1 });
+        <div class="main">
 
 
-//     }
-// });
+            <svg id="logo" width="892" height="118" viewBox="0 0 892 118" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-outside-1_1_13" maskUnits="userSpaceOnUse" x="-0.0499878" y="0.0999947" width="892"
+                    height="117" fill="black">
+                    <rect fill="white" x="-0.0499878" y="0.0999947" width="892" height="117" />
+                    <path
+                        d="M76.35 87.75H30.75L22.35 111H7.95001L45.75 7.05H61.5L99.15 111H84.75L76.35 87.75ZM72.45 76.65L53.55 23.85L34.65 76.65H72.45Z" />
+                    <path
+                        d="M170.674 111L145.774 68.25H129.274V111H115.624V6.45H149.374C157.274 6.45 163.924 7.8 169.324 10.5C174.824 13.2 178.924 16.85 181.624 21.45C184.324 26.05 185.674 31.3 185.674 37.2C185.674 44.4 183.574 50.75 179.374 56.25C175.274 61.75 169.074 65.4 160.774 67.2L187.024 111H170.674ZM129.274 57.3H149.374C156.774 57.3 162.324 55.5 166.024 51.9C169.724 48.2 171.574 43.3 171.574 37.2C171.574 31 169.724 26.2 166.024 22.8C162.424 19.4 156.874 17.7 149.374 17.7H129.274V57.3Z" />
+                    <path
+                        d="M280.084 6.45L246.034 71.55V111H232.384V71.55L198.184 6.45H213.334L239.134 59.4L264.934 6.45H280.084Z" />
+                    <path
+                        d="M356.282 87.75H310.682L302.282 111H287.882L325.682 7.05H341.432L379.082 111H364.682L356.282 87.75ZM352.382 76.65L333.482 23.85L314.582 76.65H352.382Z" />
+                    <path
+                        d="M477.756 111H464.106L409.206 27.75V111H395.556V6.3H409.206L464.106 89.4V6.3H477.756V111Z" />
+                    <path
+                        d="M574.165 112.05C567.265 112.05 561.065 110.85 555.565 108.45C550.165 105.95 545.915 102.55 542.815 98.25C539.715 93.85 538.115 88.8 538.015 83.1H552.565C553.065 88 555.065 92.15 558.565 95.55C562.165 98.85 567.365 100.5 574.165 100.5C580.665 100.5 585.765 98.9 589.465 95.7C593.265 92.4 595.165 88.2 595.165 83.1C595.165 79.1 594.065 75.85 591.865 73.35C589.665 70.85 586.915 68.95 583.615 67.65C580.315 66.35 575.865 64.95 570.265 63.45C563.365 61.65 557.815 59.85 553.615 58.05C549.515 56.25 545.965 53.45 542.965 49.65C540.065 45.75 538.615 40.55 538.615 34.05C538.615 28.35 540.065 23.3 542.965 18.9C545.865 14.5 549.915 11.1 555.115 8.69999C560.415 6.29999 566.465 5.09999 573.265 5.09999C583.065 5.09999 591.065 7.54999 597.265 12.45C603.565 17.35 607.115 23.85 607.915 31.95H592.915C592.415 27.95 590.315 24.45 586.615 21.45C582.915 18.35 578.015 16.8 571.915 16.8C566.215 16.8 561.565 18.3 557.965 21.3C554.365 24.2 552.565 28.3 552.565 33.6C552.565 37.4 553.615 40.5 555.715 42.9C557.915 45.3 560.565 47.15 563.665 48.45C566.865 49.65 571.315 51.05 577.015 52.65C583.915 54.55 589.465 56.45 593.665 58.35C597.865 60.15 601.465 63 604.465 66.9C607.465 70.7 608.965 75.9 608.965 82.5C608.965 87.6 607.615 92.4 604.915 96.9C602.215 101.4 598.215 105.05 592.915 107.85C587.615 110.65 581.365 112.05 574.165 112.05Z" />
+                    <path
+                        d="M690.852 87.75H645.252L636.852 111H622.452L660.252 7.05H676.002L713.652 111H699.252L690.852 87.75ZM686.952 76.65L668.052 23.85L649.152 76.65H686.952Z" />
+                    <path d="M743.776 6.45V111H730.126V6.45H743.776Z" />
+                    <path d="M849.24 111H835.59L780.69 27.75V111H767.04V6.3H780.69L835.59 89.4V6.3H849.24V111Z" />
+                    <path d="M886.159 6.45V111H872.509V6.45H886.159Z" />
+                </mask>
+                <path
+                    d="M76.35 87.75H30.75L22.35 111H7.95001L45.75 7.05H61.5L99.15 111H84.75L76.35 87.75ZM72.45 76.65L53.55 23.85L34.65 76.65H72.45Z"
+                    stroke="white" stroke-width="10" mask="url(#path-1-outside-1_1_13)" />
+                <path
+                    d="M170.674 111L145.774 68.25H129.274V111H115.624V6.45H149.374C157.274 6.45 163.924 7.8 169.324 10.5C174.824 13.2 178.924 16.85 181.624 21.45C184.324 26.05 185.674 31.3 185.674 37.2C185.674 44.4 183.574 50.75 179.374 56.25C175.274 61.75 169.074 65.4 160.774 67.2L187.024 111H170.674ZM129.274 57.3H149.374C156.774 57.3 162.324 55.5 166.024 51.9C169.724 48.2 171.574 43.3 171.574 37.2C171.574 31 169.724 26.2 166.024 22.8C162.424 19.4 156.874 17.7 149.374 17.7H129.274V57.3Z"
+                    stroke="white" stroke-width="10" mask="url(#path-1-outside-1_1_13)" />
+                <path
+                    d="M280.084 6.45L246.034 71.55V111H232.384V71.55L198.184 6.45H213.334L239.134 59.4L264.934 6.45H280.084Z"
+                    stroke="white" stroke-width="10" mask="url(#path-1-outside-1_1_13)" />
+                <path
+                    d="M356.282 87.75H310.682L302.282 111H287.882L325.682 7.05H341.432L379.082 111H364.682L356.282 87.75ZM352.382 76.65L333.482 23.85L314.582 76.65H352.382Z"
+                    stroke="white" stroke-width="10" mask="url(#path-1-outside-1_1_13)" />
+                <path d="M477.756 111H464.106L409.206 27.75V111H395.556V6.3H409.206L464.106 89.4V6.3H477.756V111Z"
+                    stroke="white" stroke-width="10" mask="url(#path-1-outside-1_1_13)" />
+                <path
+                    d="M574.165 112.05C567.265 112.05 561.065 110.85 555.565 108.45C550.165 105.95 545.915 102.55 542.815 98.25C539.715 93.85 538.115 88.8 538.015 83.1H552.565C553.065 88 555.065 92.15 558.565 95.55C562.165 98.85 567.365 100.5 574.165 100.5C580.665 100.5 585.765 98.9 589.465 95.7C593.265 92.4 595.165 88.2 595.165 83.1C595.165 79.1 594.065 75.85 591.865 73.35C589.665 70.85 586.915 68.95 583.615 67.65C580.315 66.35 575.865 64.95 570.265 63.45C563.365 61.65 557.815 59.85 553.615 58.05C549.515 56.25 545.965 53.45 542.965 49.65C540.065 45.75 538.615 40.55 538.615 34.05C538.615 28.35 540.065 23.3 542.965 18.9C545.865 14.5 549.915 11.1 555.115 8.69999C560.415 6.29999 566.465 5.09999 573.265 5.09999C583.065 5.09999 591.065 7.54999 597.265 12.45C603.565 17.35 607.115 23.85 607.915 31.95H592.915C592.415 27.95 590.315 24.45 586.615 21.45C582.915 18.35 578.015 16.8 571.915 16.8C566.215 16.8 561.565 18.3 557.965 21.3C554.365 24.2 552.565 28.3 552.565 33.6C552.565 37.4 553.615 40.5 555.715 42.9C557.915 45.3 560.565 47.15 563.665 48.45C566.865 49.65 571.315 51.05 577.015 52.65C583.915 54.55 589.465 56.45 593.665 58.35C597.865 60.15 601.465 63 604.465 66.9C607.465 70.7 608.965 75.9 608.965 82.5C608.965 87.6 607.615 92.4 604.915 96.9C602.215 101.4 598.215 105.05 592.915 107.85C587.615 110.65 581.365 112.05 574.165 112.05Z"
+                    stroke="white" stroke-width="10" mask="url(#path-1-outside-1_1_13)" />
+                <path
+                    d="M690.852 87.75H645.252L636.852 111H622.452L660.252 7.05H676.002L713.652 111H699.252L690.852 87.75ZM686.952 76.65L668.052 23.85L649.152 76.65H686.952Z"
+                    stroke="white" stroke-width="10" mask="url(#path-1-outside-1_1_13)" />
+                <path d="M743.776 6.45V111H730.126V6.45H743.776Z" stroke="white" stroke-width="10"
+                    mask="url(#path-1-outside-1_1_13)" />
+                <path d="M849.24 111H835.59L780.69 27.75V111H767.04V6.3H780.69L835.59 89.4V6.3H849.24V111Z"
+                    stroke="white" stroke-width="10" mask="url(#path-1-outside-1_1_13)" />
+                <path d="M886.159 6.45V111H872.509V6.45H886.159Z" stroke="white" stroke-width="10"
+                    mask="url(#path-1-outside-1_1_13)" />
+            </svg>
 
 
-var swiper = new Swiper('.blog-slider', {
-    spaceBetween: 30,
-    effect: 'fade',
-    loop: true,
-    mousewheel: {
-        invert: false,
-    },
-    // autoHeight: true,
-    pagination: {
-        el: '.blog-slider__pagination',
-        clickable: true,
-    }
-});
+        </div>
+        <h3 class="seemore"> Scroll down to see more</h3>
+    </div>
+
+
+    <div class="second-page">
+        <div class="intro-text">
+            <h1 class="title"> I design and I code</h1>
+
+            <h2 class="subtitle"> <span class="topic">
+                    Languages:
+                </span> C++, JavaScript, HTML, css</h2>
+            <h2 class="subtitle">
+                <span class="topic">Skills:</span> Web design and development, data structures and algorithms,
+                competitive
+                programming
+            </h2>
+            <h2 class="subtitle">
+                <span class="topic"> Achievements:</span>
+                <li>6 stars on Hackerrank</li>
+                <li>Over 305 problems solved on leetcode</li>
+                <li>3 stars on CodeChef</li>
+            </h2>
+            <h3 class="seemore"> Scroll down to see more</h3>
+
+        </div>
+
+        <img class="code-note" src="codemain.svg" alt="">
+        <div class="blend"></div>
+        <video class="code-video" src="coding.mp4" autoplay="true" muted loop></video>
+
+    </div>
+    <div class="third-page">
+        <div class="main-heading">
+            <h1 class="project-heading">PROJECTS</h1>
+        </div>
+        <h3 class="seemore"> Scroll down to see more</h3>
+
+    </div>
+
+    <div class="fourth-page">
+        <div class="blog-slider">
+            <div class="blog-slider__wrp swiper-wrapper">
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="yelpcamp.png" alt="project-image">
+                    </div>
+                    <div class="blog-slider__content">
+                        <span class="blog-slider__code">Swipe/scroll to see more </span>
+                        <div class="blog-slider__title">YelpCamp</div>
+                        <div class="blog-slider__text">A fully functional web app that allows you to create, read,
+                            update and delete campgrounds. Register, log in, and browse the world.
+                            Stack: Node JS, Express JS, MongoDB, Mongoose, EJS</div>
+                        <a href="#" class="blog-slider__button">Check it out</a>
+                        <a href="#" class="blog-slider__button">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="patatap.png" alt="project-image">
+                    </div>
+                    <div class="blog-slider__content">
+                        <span class="blog-slider__code">Swipe/scroll to see more</span>
+                        <div class="blog-slider__title">Pat-A-Tap</div>
+                        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                            magnam repellat deserunt esse saepe alias qui, quia quaerat sunt velit iusto a assumenda,
+                            perspiciatis rem sed et quae nulla aliquam!</div>
+                        <a href="#" class="blog-slider__button">Check it out</a>
+                        <a href="#" class="blog-slider__button">GitHub</a>
+                    </div>
+                </div>
+
+
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="colorgame.png" alt="project-image">
+                    </div>
+                    <div class="blog-slider__content">
+                        <span class="blog-slider__code">Swipe/scroll to see more</span>
+                        <div class="blog-slider__title">RGB color game</div>
+                        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                            magnam repellat deserunt esse saepe alias qui, quia quaerat sunt velit iusto a assumenda,
+                            perspiciatis rem sed et quae nulla aliquam!</div>
+                        <a href="#" class="blog-slider__button">Check it out</a>
+                        <a href="#" class="blog-slider__button">GitHub</a>
+                    </div>
+                </div>
+
+
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="movies.png" alt="project-image">
+                    </div>
+                    <div class="blog-slider__content">
+                        <span class="blog-slider__code">Swipe/scroll to see more</span>
+                        <div class="blog-slider__title">Movie Search</div>
+                        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                            magnam repellat deserunt esse saepe alias qui, quia quaerat sunt velit iusto a assumenda,
+                            perspiciatis rem sed et quae nulla aliquam!</div>
+                        <a href="#" class="blog-slider__button">Check it out</a>
+                        <a href="#" class="blog-slider__button">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-slider__pagination"></div>
+        </div>
+
+
+    </div>
+    <div class="third-page">
+        <div class="main-heading">
+            <h1 class="project-heading">coNtaCt mE</h1>
+        </div>
+        <h3 class="seemore"> Scroll down to see more</h3>
+
+    </div>
 
 
 
-
-let mouseCursor = document.querySelector('.cursor');
-let navLinks = document.querySelectorAll('a')
-window.addEventListener('mousemove', cursor);
-function cursor(e) {
-    mouseCursor.style.top = e.clientY + 'px';
-    mouseCursor.style.left = e.clientX + 'px';
-}
-
-navLinks.forEach(link => {
-    link.addEventListener('mouseover', () => {
-        mouseCursor.classList.add('link-grow');
-        link.classList.add('hovered-link');
-    })
-    link.addEventListener('mouseleave', () => {
-        mouseCursor.classList.remove('link-grow');
-        link.classList.remove('hovered-link');
-    })
-})
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 
 
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"
+        integrity="sha512-pY1t/ADgTwbfGbw0+mRGd33EroA5YgRUWhQNFpPIAdBzyoSb38FsFrf4wBTcS3GFPdTfgtpRrbGCkdl2C2OXYA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"
+        integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
 
-let tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".second-page",
-        start: "top",
-        end: "100%",
-        scrub: true,
-        pin: true,
-    },
-});
-
-tl.fromTo('.second-page', { clipPath: 'circle(4%)' }, { clipPath: 'circle(75%)', duration: 3 });
-tl.fromTo('.code-note', { scale: 0.5 }, { scale: 0, opacity: 0, duration: 1 }, '-=3');
-tl.fromTo('.title', { opacity: 0 }, { opacity: 1, duration: 1 });
-tl.fromTo('.subtitle', { opacity: 0 }, { opacity: 1, duration: 1 });
-tl.fromTo('.third-page', { clipPath: 'circle(4%)' }, { clipPath: 'circle(75%)', duration: 1 });
-// tl.fromTo('.custom', { opacity: 0 }, { opacity: 1, duration: 1 });
-
-let tl2 = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".third-page",
-        start: "top",
-        end: "20%",
-        scrub: true,
-        pin: true,
-    },
-});
-
-tl2.fromTo('.third-page', { scale: 0 }, { scale: 1, opacity: 1, duration: 0.2 });
+</html>
