@@ -75,6 +75,32 @@
 // });
 // document.querySelector('video').playbackRate = 0.1;
 
+
+const form = document.querySelector('.contact')
+
+async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.querySelector('.status');
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        status.style = 'display: flex; border-left:18px solid #3AD66E;';
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+    }).catch(error => {
+        status.style = 'display: flex; border-left:18px solid #d63a64;';
+        status.innerHTML = "Oops! There was a problem submitting your form"
+    });
+}
+
+form.addEventListener("submit", handleSubmit);
+
+
 var swiper = new Swiper('.blog-slider', {
     spaceBetween: 30,
     effect: 'fade',
