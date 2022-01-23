@@ -89,7 +89,7 @@ async function handleSubmit(event) {
             'Accept': 'application/json'
         }
     }).then(response => {
-        status.style = 'display: flex; border-left:18px solid #3AD66E;';
+        status.style = 'display: flex; border-left:18px solid #3AD66E; left:0;';
         status.innerHTML = "Thanks for your submission!";
         form.reset()
     }).catch(error => {
